@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oUv-oM-o3J">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="navigationControllerAppearedTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The number of first view occurrences :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4u-9p-npo">
+                                <rect key="frame" x="20" y="72" width="367" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="367" id="be1-VP-M7x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P4u-9p-npo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="iiB-B5-KsT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P4u-9p-npo" secondAttribute="bottom" constant="456" id="lWv-Ns-yWY"/>
+                            <constraint firstItem="P4u-9p-npo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zN0-Iw-ExK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="First" id="KlT-tM-pqi">
+                        <barButtonItem key="rightBarButtonItem" title="secondView" id="3lX-Ti-B9h">
+                            <connections>
+                                <segue destination="nII-Lw-PU5" kind="show" id="o1H-QU-AUN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="apppearTimes" destination="P4u-9p-npo" id="QsL-X0-ZGf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="-383"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="KB0-kr-1cK">
+            <objects>
+                <viewController id="nII-Lw-PU5" customClass="SecondViewController" customModule="navigationControllerAppearedTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5kX-Uv-w4K"/>
+                        <viewControllerLayoutGuide type="bottom" id="O5S-gO-KAe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fyq-Sr-08w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The number of second view occurrences :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxn-EM-Sct">
+                                <rect key="frame" x="20" y="72" width="400" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="xId-cz-3S0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nxn-EM-Sct" firstAttribute="leading" secondItem="fyq-Sr-08w" secondAttribute="leadingMargin" id="C8g-5z-MSG"/>
+                            <constraint firstItem="nxn-EM-Sct" firstAttribute="top" secondItem="5kX-Uv-w4K" secondAttribute="bottom" constant="8" symbolic="YES" id="FBC-hY-sjW"/>
+                            <constraint firstItem="O5S-gO-KAe" firstAttribute="top" secondItem="nxn-EM-Sct" secondAttribute="bottom" constant="456" id="qca-Iw-bDX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second" id="9al-MF-xVC">
+                        <barButtonItem key="rightBarButtonItem" title="thirdView" id="SFF-JC-Zzm">
+                            <connections>
+                                <segue destination="ftC-xC-wfZ" kind="show" id="dKr-Fh-Ues"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="appearTimes" destination="nxn-EM-Sct" id="GmJ-MH-PzV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fad-90-rXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730" y="-383"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Gj-eD-igY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oUv-oM-o3J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DpW-BB-aFl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6PO-an-EdM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r0c-Ss-PMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253" y="-383"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="9nw-MZ-xMT">
+            <objects>
+                <viewController id="ftC-xC-wfZ" customClass="ThirdViewController" customModule="navigationControllerAppearedTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aKP-8i-xdC"/>
+                        <viewControllerLayoutGuide type="bottom" id="FRK-XX-Kbq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rsZ-g7-UsU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The number of third view occurrences :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ9-DI-f1G">
+                                <rect key="frame" x="20" y="72" width="383" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="383" id="GU9-ex-IRE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LZ9-DI-f1G" firstAttribute="top" secondItem="aKP-8i-xdC" secondAttribute="bottom" constant="8" symbolic="YES" id="H7v-R0-0fL"/>
+                            <constraint firstItem="FRK-XX-Kbq" firstAttribute="top" secondItem="LZ9-DI-f1G" secondAttribute="bottom" constant="456" id="rPN-LL-KSG"/>
+                            <constraint firstItem="LZ9-DI-f1G" firstAttribute="leading" secondItem="rsZ-g7-UsU" secondAttribute="leadingMargin" id="yGx-dP-nTj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third" id="vC4-ds-FrK"/>
+                    <connections>
+                        <outlet property="appearTimes" destination="LZ9-DI-f1G" id="vc0-oG-gts"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uQ-jm-Ihk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2440" y="-383"/>
+        </scene>
+    </scenes>
+</document>
